@@ -361,8 +361,7 @@ PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
 # USB HAL
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.basic
+$(call inherit-product, vendor/qcom/opensource/usb/vendor_product.mk)
 
 # Vibrator
 PRODUCT_PACKAGES += \
